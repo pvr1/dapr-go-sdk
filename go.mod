@@ -1,4 +1,4 @@
-module github.com/dapr/go-sdk
+module github.com/pvr1/dapr-go-sdk
 
 go 1.17
 
