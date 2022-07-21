@@ -216,7 +216,7 @@ func NewClientWithAddress(address string) (client Client, err error) {
 	}
 	logger.Printf("dapr client initializing for: %s", address)
 
-	ctx, ctxCancel := context.WithTimeout(context.Background(), 1*time.Second)
+	ctx, ctxCancel := context.WithTimeout(context.Background(), 5*time.Second)
 	conn, err := grpc.DialContext(
 		ctx,
 		address,
